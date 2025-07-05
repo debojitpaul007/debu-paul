@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Car Dham - Debu Paul</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      height: 100vh;
+      background: url('https://images.unsplash.com/photo-1502877338535-766e1452684a?auto=format&fit=crop&w=1470&q=80') no-repeat center center fixed;
+      background-size: cover;
+      position: relative;
+      color: #f5f5f7;
+      overflow-x: hidden;
+    }
+    body::before {
+      content: "";
+      position: fixed;
+      top: 0; left: 0; right: 0; bottom: 0;
+      background: rgba(10, 10, 10, 0.75);
+      z-index: -1;
+    }
+    .bg-glass {
+      background: rgba(255 255 255 / 0.08);
+      backdrop-filter: blur(12px);
+      border-radius: 16px;
+      box-shadow: 0 12px 24px rgba(0,0,0,0.3);
+      border: 1px solid rgba(255 255 255 / 0.2);
+      color: #eee;
+    }
+    a {
+      color: #0ea5e9;
+      text-decoration: underline;
+    }
+    a:hover {
+      color: #38bdf8;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header with image and name -->
+  <header class="bg-glass p-8 mb-12 mx-6 md:mx-20 lg:mx-40 flex items-center justify-center gap-6">
+    <img
+      src="https://i.ibb.co/NnxKXSWz/Screenshot-5-7-2025-23233-www-instagram-com.jpg"
+      alt="Debu Paul"
+      class="w-24 h-24 object-cover rounded-full border-4 border-cyan-400 shadow-lg"
+    />
+    <div class="text-center md:text-left">
+      <h1 class="text-5xl font-extrabold tracking-tight drop-shadow-lg">Debu Paul</h1>
+      <p class="italic text-lg max-w-xl drop-shadow-sm text-cyan-300 mt-1">Owner of Car Dham</p>
+    </div>
+  </header>
+
+  <!-- Intro Section -->
+  <section class="bg-glass max-w-4xl mx-auto p-10 rounded-2xl mb-16 shadow-xl mx-6 md:mx-20 lg:mx-40 text-center">
+    <h2 class="text-4xl font-semibold mb-5 tracking-wide">Welcome to Car Dham</h2>
+    <p class="italic text-xl mb-6 max-w-xl mx-auto drop-shadow-md">
+      "Where premium quality meets unbeatable prices. Your dream car is just a drive away."
+    </p>
+    <p class="text-lg max-w-xl mx-auto text-gray-300">
+      I’m <strong>Debu Paul</strong>, proud owner of Car Dham located in Dhupguri, West Bengal. We specialize in luxury and affordable second-hand cars tailored for your lifestyle.
+    </p>
+  </section>
+
+  <!-- Brands Section -->
+  <main class="bg-glass max-w-6xl mx-auto p-8 rounded-2xl shadow-xl mb-20 mx-6 md:mx-20 lg:mx-40">
+    <h2 class="text-3xl font-bold text-center mb-10 tracking-wide">Exquisite Indian Car Brands</h2>
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-12 text-gray-300">
+
+      <div class="hover:text-sky-400 transition cursor-default">
+        <h3 class="text-2xl font-semibold mb-2">Maruti Suzuki</h3>
+        <p>Reliable family cars</p>
+        <p class="mt-1">💸 Price: Under your budget</p>
+        <p class="mt-1">📍 Dhupguri</p>
+      </div>
+
+      <div class="hover:text-sky-400 transition cursor-default">
+        <h3 class="text-2xl font-semibold mb-2">Hyundai</h3>
+        <p>Stylish & modern</p>
+        <p class="mt-1">💸 Price: Under your budget</p>
+        <p class="mt-1">📍 Dhupguri</p>
+      </div>
+
+      <div class="hover:text-sky-400 transition cursor-default">
+        <h3 class="text-2xl font-semibold mb-2">Tata Motors</h3>
+        <p>Rugged & durable</p>
+        <p class="mt-1">💸 Price: Under your budget</p>
+        <p class="mt-1">📍 Dhupguri</p>
+      </div>
+
+      <div class="hover:text-sky-400 transition cursor-default">
+        <h3 class="text-2xl font-semibold mb-2">Honda</h3>
+        <p>Smooth & premium feel</p>
+        <p class="mt-1">💸 Price: Under your budget</p>
+        <p class="mt-1">📍 Dhupguri</p>
+      </div>
+
+      <div class="hover:text-sky-400 transition cursor-default">
+        <h3 class="text-2xl font-semibold mb-2">Toyota</h3>
+        <p>Long-lasting quality</p>
+        <p class="mt-1">💸 Price: Under your budget</p>
+        <p class="mt-1">📍 Dhupguri</p>
+      </div>
+
+      <div class="hover:text-sky-400 transition cursor-default">
+        <h3 class="text-2xl font-semibold mb-2">Mahindra</h3>
+        <p>Powerful SUVs</p>
+        <p class="mt-1">💸 Price: Under your budget</p>
+        <p class="mt-1">📍 Dhupguri</p>
+      </div>
+
+    </div>
+  </main>
+
+  <!-- Q&A & Rating Section -->
+  <section class="bg-glass max-w-4xl mx-auto p-10 rounded-2xl mb-16 shadow-xl mx-6 md:mx-20 lg:mx-40">
+    <h2 class="text-3xl font-semibold mb-8 text-center tracking-wide">Ask a Question & Rate Us</h2>
+    <form id="qnaForm" class="mb-8 max-w-xl mx-auto">
+      <label class="block mb-3 font-semibold text-gray-200" for="name">Your Name</label>
+      <input
+        type="text"
+        id="name"
+        name="name"
+        placeholder="Enter your name"
+        class="w-full mb-6 p-3 rounded-lg border border-gray-600 bg-transparent placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-sky-500 text-gray-200"
+        required
+      />
+
+      <label class="block mb-3 font-semibold text-gray-200" for="question">Your Question</label>
+      <textarea
+        id="question"
+        name="question"
+        rows="4"
+        placeholder="Write your question here"
+        class="w-full mb-6 p-3 rounded-lg border border-gray-600 bg-transparent placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-sky-500 resize-none text-gray-200"
+        required
+      ></textarea>
+
+      <label class="block mb-3 font-semibold text-gray-200">Your Rating</label>
+      <div id="ratingStars" class="mb-8 flex space-x-3 justify-center text-3xl text-gray-500 cursor-pointer select-none">
+        <span class="star" data-value="1">&#9733;</span>
+        <span class="star" data-value="2">&#9733;</span>
+        <span class="star" data-value="3">&#9733;</span>
+        <span class="star" data-value="4">&#9733;</span>
+        <span class="star" data-value="5">&#9733;</span>
+      </div>
+
+      <button
+        type="submit"
+        class="w-full bg-sky-600 hover:bg-sky-700 text-white py-3 rounded-lg font-semibold transition"
+      >
+        Submit
+      </button>
+    </form>
+
+    <h3 class="text-2xl font-semibold mb-6 text-center tracking-wide text-sky-400">Customer Questions & Ratings</h3>
+    <div id="qnaList" class="space-y-6 max-h-96 overflow-y-auto px-6 text-gray-200"></div>
+  </section>
+
+  <!-- Contact Section -->
+  <footer class="bg-glass p-8 text-center mx-6 md:mx-20 lg:mx-40 rounded-2xl shadow-xl text-gray-300">
+    <p class="text-lg mb-2">📞 Call or WhatsApp: <a href="tel:+918906002560" class="hover:text-sky-400">+91 89060 02560</a></p>
+    <p class="text-lg">📍 Dhupguri, West Bengal</p>
+    <p class="mt-6 italic text-sky-400 max-w-lg mx-auto drop-shadow-md">
+      “A car isn’t just a machine — it’s a part of your journey.”
+    </p>
+    <p class="mt-3 text-sm text-gray-400">&copy; 2025 Car Dham | Created with ❤️ by Debu Paul</p>
+  </footer>
+
+  <script>
+    const stars = document.querySelectorAll('.star');
+    let selectedRating = 0;
+
+    stars.forEach(star => {
+      star.addEventListener('mouseenter', () => {
+        const val = parseInt(star.getAttribute('data-value'));
+        highlightStars(val);
+      });
+      star.addEventListener('mouseleave', () => {
+        highlightStars(selectedRating);
+      });
+      star.addEventListener('click', () => {
+        selectedRating = parseInt(star.getAttribute('data-value'));
+        highlightStars(selectedRating);
+      });
+    });
+
+    function highlightStars(rating) {
+      stars.forEach(star => {
+        const val = parseInt(star.getAttribute('data-value'));
+        if (val <= rating) {
+          star.classList.add('text-yellow-400');
+        } else {
+          star.classList.remove('text-yellow-400');
+        }
+      });
+    }
+
+    const form = document.getElementById('qnaForm');
+    const qnaList = document.getElementById('qnaList');
+
+    form.addEventListener('submit', e => {
+      e.preventDefault();
+      const name = form.name.value.trim();
+      const question = form.question.value.trim();
+
+      if (name && question && selectedRating > 0) {
+        const entry = document.createElement('div');
+        entry.classList.add('p-6', 'bg-sky-900', 'bg-opacity-30', 'rounded-lg', 'shadow-md');
+
+        entry.innerHTML = `
+          <p><strong>${escapeHtml(name)}</strong> asks:</p>
+          <p class="italic mb-3">${escapeHtml(question)}</p>
+          <p>Rating: ${renderStars(selectedRating)}</p>
+        `;
+
+        qnaList.prepend(entry);
+
+        form.reset();
+        selectedRating = 0;
+        highlightStars(0);
+      } else {
+        alert('Please fill all fields and select a rating.');
+      }
+    });
+
+    function renderStars(rating) {
+      let starsHtml = '';
+      for (let i = 1; i <= 5; i++) {
+        starsHtml += i <= rating ? '⭐' : '☆';
+      }
+      return starsHtml;
+    }
+
+    function escapeHtml(text) {
+      return text.replace(/[&<>"']/g, function (m) {
+        return ({
+          '&': '&amp;',
+          '<': '&lt;',
+          '>': '&gt;',
+          '"': '&quot;',
+          "'": '&#39;',
+        })[m];
+      });
+    }
+  </script>
+
+</body>
+</html>
